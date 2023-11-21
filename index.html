@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.city {
+
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+}
+
+.note {
+
+    font-size: 120px;
+    color: red;
+}
+    </style>
+</head>
+<body>
+    
+<h2>Different elements can share same calss</h2>
+
+<p>Even if the two elements do not have the same tag name, they can both to the same class, and get the same css STYLING</p>
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France</p>
+
+<h1>My <span class="note">Important</span> Headding</h1>
+
+<p>This is some <span class="note">important</span>text.</p>
+
+<h2>USE OF THE CLASS ATRIBUTE IN JAVASCRIPT</h2>
+
+<p>Click the button to hide all elements with class name "cidade"</p>
+<button onclick="myFunction()">Hide Elements</button>
+
+<h2 class="cidade">Salvador</h2>
+<p>Salvador é capital da Bahia.</p>
+
+<h2 class="cidade">SP</h2>
+<p>É capital de Sao Paulo.</p>
+
+<h2 class="cidade">Salvador</h2>
+<p>Salvador é capital da Bahia.</p>
+
+<script>
+    function myFunction() {
+      var x = document.getElementsByClassName("cidade");
+      for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+    }
+    </script>
+
+    <h2>Iframe - Target for a link</h2>
+
+    <iframe src="12" frameborder="0"></iframe>
+
+
+</body>
+</html>
